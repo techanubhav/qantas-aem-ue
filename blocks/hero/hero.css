@@ -67,7 +67,8 @@
 
 .hero-container > div.default-content-wrapper > p > picture {
   position: absolute;
-  top: 60px;
+  top: 80px;
   transform: scale(1.1);
   z-index: -1;
+  left: 250px;
 } 
