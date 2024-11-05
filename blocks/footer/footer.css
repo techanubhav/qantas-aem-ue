@@ -18,3 +18,25 @@ footer .footer p {
     padding: 40px 32px 24px;
   }
 }
+
+footer .section .columns p {
+  font-size: 24px;
+}
+
+footer .section .columns ul {
+  padding: 0px;
+  font-size: 16px;
+  line-height: 1.8;
+  text-decoration: underline;
+}
+
+footer .section .columns ul li {
+  list-style: none;
+  text-decoration: none;
+}
+
+footer .section .columns ul li a:any-link {
+  list-style: none;
+  text-decoration: none;
+  color: #323232;
+}
