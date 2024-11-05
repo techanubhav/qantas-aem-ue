@@ -31,6 +31,10 @@
             {
               "name": "Copyright",
               "value": "copyright"
+            },
+            {
+              "name": "Acknowledgement",
+              "value": "acknowledgement"
             }
           ]
         }
