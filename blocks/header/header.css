@@ -282,14 +282,14 @@ header nav .nav-lang .default-content-wrapper ul {
 header nav .nav-lang .default-content-wrapper ul li:first-child {
   display: inline-flex;
   align-items: center;
-  font-weight: bold;
+  /* font-weight: bold; */
   color: inherit;
 }
 
 header nav .nav-lang .default-content-wrapper ul li:first-child::after {
   content: "▼"; /* Downward arrow */
-    font-size: 12px;
-    margin-left: 5px;
+  font-size: 12px;
+  margin-left: 5px;
 }
 
 header nav .nav-lang .default-content-wrapper ul li:not(:first-child) {

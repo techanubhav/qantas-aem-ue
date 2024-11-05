@@ -40,3 +40,46 @@ footer .section .columns ul li a:any-link {
   text-decoration: none;
   color: #323232;
 }
+
+footer .section.copyright .default-content-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 16px;
+  margin: 20px 0px;
+}
+
+footer .section.copyright img {
+  width: 100px;
+  height: unset;
+}
+
+footer .section.copyright p:nth-of-type(2) {
+  margin-left: auto;
+}
+
+footer .section.terms {
+  margin: 20px 0px;
+}
+
+footer .section.terms ul {
+  display: inline-flex;
+  flex-wrap: wrap;
+  gap: .5rem 1.5rem;
+  justify-content: flex-start;
+  margin-bottom: 20px;
+  padding: 0;
+  list-style-type: none;
+  margin: 0;
+  color: #323232;
+  font-size: 16px;
+}
+
+footer .section.terms ul li {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+footer .section.terms ul li a:any-link {
+  color: #323232
+}
