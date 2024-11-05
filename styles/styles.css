@@ -156,14 +156,14 @@ button {
 
 /* links */
 a:any-link {
-  color: var(--link-color);
-  text-decoration: none;
+  color: #323232;
+  text-decoration: underline;
   word-break: break-word;
 }
 
 a:hover {
-  color: var(--link-hover-color);
-  text-decoration: underline;
+  color: #323232;
+  text-decoration: none;
 }
 
 /* buttons */
