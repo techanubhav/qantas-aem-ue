@@ -68,7 +68,11 @@
 .hero-container > div.default-content-wrapper > p > picture {
   position: absolute;
   top: 80px;
-  transform: scale(1.1);
+  transform: scale(1.2);
   z-index: -1;
   left: 250px;
 } 
+
+.hero a.button:any-link {
+  border-radius: 1.6em;
+}

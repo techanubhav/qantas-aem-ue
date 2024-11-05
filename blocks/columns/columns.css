@@ -21,7 +21,7 @@
 
 @media (width >= 900px) {
   .columns > div {
-    align-items: center;
+    /* align-items: center; */
     flex-direction: unset;
     gap: 24px;
   }
@@ -30,4 +30,66 @@
     flex: 1;
     order: unset;
   }
+}
+
+main .section .columns a.button:any-link {
+  display: inline-block;
+  max-width: 100%;
+  margin: 12px 0;
+  font-family: var(--body-font-family);
+  font-style: normal;
+  font-weight: 500;
+  line-height: 1.25;
+  text-align: center;
+  text-decoration: none;
+  background-color: unset;
+  color: var(--link-color);
+  cursor: pointer;
+  padding: 0px;
+}
+
+main .section .columns a.button:any-link::after {
+content: "→"; /* Arrow symbol */
+margin-left: 5px; /* Space between the link text and the arrow */
+font-size: 1em; /* Adjust size to match link */
+color: inherit; /* Match arrow color to the link text color */
+transition: transform 0.2s ease; /* Optional: add a subtle hover animation */
+}
+
+main .section .columns a.button:any-link::after:hover {
+transform: translateX(3px); /* Optional: animate the arrow on hover */
+}
+
+main .section.highlight .columns a.button.secondary:any-link {
+  display: inline-block;
+  max-width: 100%;
+  margin: 12px 0;
+  font-family: var(--body-font-family);
+  font-style: normal;
+  font-weight: 500;
+  line-height: 1.25;
+  text-align: center;
+  text-decoration: none;
+  background-color: unset;
+  color: var(--link-color);
+  cursor: pointer;
+  padding: 0.8em 1.4em;
+}
+
+main .section.highlight .columns a.button.secondary:any-link:hover {
+  background-color: #e40000;
+  border: 2px solid #e40000;
+  color: white;
+}
+
+main .section.highlight .columns a.button.secondary:any-link::after {
+content: none; /* Arrow symbol */
+margin-left: none; /* Space between the link text and the arrow */
+font-size: 1em; /* Adjust size to match link */
+color: inherit; /* Match arrow color to the link text color */
+transition: none; /* Optional: add a subtle hover animation */
+}
+
+main .section.highlight .columns a.button.secondary:any-link::after:hover {
+transform: none; /* Optional: animate the arrow on hover */
 }

@@ -3,21 +3,45 @@
   margin: 0;
   padding: 0;
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(257px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(380px, 1fr));
   grid-gap: 24px;
 }
 
 .cards > ul > li {
   border: 1px solid #dadada;
   background-color: var(--background-color);
+  position: relative;
 }
 
 .cards .cards-card-body {
-  margin: 16px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: -180px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-weight: 700;
+  font-size: 35px;
 }
 
 .cards .cards-card-image {
+  position:relative;
+  overflow: hidden;
   line-height: 0;
+}
+
+.cards .cards-card-image::after {
+  content: ""; /* Required for pseudo-elements */
+  position: absolute; /* Position absolutely within the .cards-card-image */
+  bottom: 0; /* Align to the bottom */
+  left: 0; /* Align to the left */
+  right: 0; /* Stretch to the right */
+  height: 200px; /* Height of the gradient overlay */
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0)); /* Black gradient */
+  pointer-events: none; /* Ensure clicks go through the overlay */
 }
 
 .cards > ul > li img {
@@ -25,3 +49,4 @@
   aspect-ratio: 4 / 3;
   object-fit: cover;
 }
+

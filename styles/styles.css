@@ -38,7 +38,7 @@
   --heading-font-size-xs: 22px;
 
   /* nav height */
-  --nav-height: 64px;
+  --nav-height: 90px;
 }
 
 /* fallback fonts */
@@ -174,8 +174,8 @@ button {
   max-width: 100%;
   margin: 12px 0;
   border: 2px solid transparent;
-  border-radius: 2.4em;
-  padding: 0.5em 1.2em;
+  border-radius: 0.2em;
+  padding: 0.8em 1.4em;
   font-family: var(--body-font-family);
   font-style: normal;
   font-weight: 500;
@@ -207,8 +207,32 @@ button:disabled:hover {
 a.button.secondary,
 button.secondary {
   background-color: unset;
-  border: 2px solid currentcolor;
-  color: var(--text-color);
+  border: 2px solid #e40000;
+  color: #e40000;
+}
+
+a.button.secondary:hover,
+button.secondary:hover {
+  background-color: #e40000;
+  border: 2px solid #e40000;
+  color: white;
+}
+
+main .section .hero a.button.secondary,
+button.secondary {
+  background-color: unset;
+  border: 2px solid white;
+  color: white;
+  font-weight: 700;
+}
+
+main .section .hero a.button.secondary:hover,
+button.secondary:hover {
+  background-color: white;
+  border: 2px solid #e40000;
+  color: #e40000;
+  font-weight: 700;
+  text-decoration: none;
 }
 
 main img {
@@ -236,7 +260,7 @@ main > .section {
 main > .section > div {
   max-width: 1200px;
   margin: auto;
-  padding: 0 24px;
+  padding: 20px 100px;
 }
 
 main > .section:first-of-type {
@@ -245,7 +269,7 @@ main > .section:first-of-type {
 
 @media (width >= 900px) {
   main > .section > div {
-    padding: 0 32px;
+    padding: 20px 150px;
   }
 }
 
@@ -255,4 +279,35 @@ main .section.highlight {
   background-color: var(--light-color);
   margin: 0;
   padding: 40px 0;
+}
+
+main .section.highlight p {
+  text-align: center;
+}
+
+main .section.highlight p strong {
+  font-weight: 700;
+  font-size: 45px;
+}
+
+main .section.highlight p.button-container strong {
+  font-weight: 700;
+  font-size: 24px;
+}
+
+main .section.highlight .columns > div {
+  text-align: center;
+}
+
+main .section.highlight .columns img {
+  width: 25%;
+}
+
+main .section.cards-container p {
+  text-align: center;
+}
+
+main .section.cards-container p strong {
+  font-weight: 700;
+  font-size: 45px;
 }
