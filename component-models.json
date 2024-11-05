@@ -114,6 +114,10 @@
           {
             "name": "Acknowledgement",
             "value": "acknowledgement"
+          },
+          {
+            "name": "Terms",
+            "value": "terms"
           }
         ]
       }
