@@ -287,7 +287,7 @@ main .section.highlight p {
 
 main .section.highlight p strong {
   font-weight: 700;
-  font-size: 45px;
+  font-size: 30px;
 }
 
 main .section.highlight p.button-container strong {
@@ -309,5 +309,5 @@ main .section.cards-container p {
 
 main .section.cards-container p strong {
   font-weight: 700;
-  font-size: 45px;
+  font-size: 30px;
 }
